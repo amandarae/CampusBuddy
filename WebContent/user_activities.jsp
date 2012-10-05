@@ -29,12 +29,13 @@
 		   </div>
 	<div class="center span12">
       	<table class="well span12">
-      	<thead><tr><th colspan="2"><h3>Your Activities</h3></th></tr></thead>
+      	<thead><tr><th colspan="3"><h3>Your Activities</h3></th></tr></thead>
       	<tbody>
       	    <tr>
       			<td><a href="activity.jsp">Aide moi en francais!</a></td>
 
       		<td>Status:<strong> Current</strong></td>
+      		<td><a class="btn btn-warning">Close Activity</a>
       		</tr>
 
       	</tbody>
