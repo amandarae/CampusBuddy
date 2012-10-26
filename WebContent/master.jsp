@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,15 +61,15 @@
 	     
 	    <div class="navbar navbar-inner">
 		   	<ul class="nav">
-	           <li id="home"><a href="home.jsp" class="brand">CampusBuddy</a></li>
-	           <li id="activities"><a href="activities.jsp">Current Activities</a></li>
-	           <li id="completed"><a href="completed.jsp">Completed Activities</a></li>
+	           <li id="home"><a href="home" class="brand">CampusBuddy</a></li>
+	           <li id="activities"><a href="home?activities=live">Current Activities</a></li>
+	           <li id="completed"><a href="home?activities=completed">Completed Activities</a></li>
 	           <li class="dropdown pull-right">
                   <a id="title" class="dropdown-toggle" data-toggle="dropdown"><strong>Your Dashboard</strong> <b class="caret"></b></a>
                   <ul class="dropdown-menu pull-right">
-                  	<li id="create_activity"><a href="create_activity.jsp">Create an Activity</a></li>
-                    <li id="user_activities"><a href="user_activities.jsp">Your Activities</a></li>
-                    <li id="user_buddies"><a href="user_buddies.jsp">Your Buddies</a></li>
+                  	<li id="create_activity"><a href="home?activities=create">Create an Activity</a></li>
+                    <li id="user_activities"><a href="home?user=activities">Your Activities</a></li>
+                    <li id="user_buddies"><a href="home?user=buddies">Your Buddies</a></li>
                   </ul>
                </li>
 		    </ul>

@@ -34,7 +34,7 @@
                 %>
                   <jsp:forward page="master.jsp">
                     <jsp:param name="embeddedPageName" value ="index.jsp"/>
-                    <jsp:param name="submitPageName" value ="home.jsp"/>
+                    <jsp:param name="submitPageName" value ="home"/>
                   </jsp:forward>
                 <%
            }

@@ -63,7 +63,7 @@
 			  <option>French</option>
 			  <option>Spanish</option>
 			  <option>American Sign Language (ASL)</option>
-			  <option>Other</option>
+			  <option>Any</option>
 			</select>
 		</div>
 		

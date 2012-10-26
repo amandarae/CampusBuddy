@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
 	table > thead > tr > th > h3{
 		margin: 0;
@@ -25,20 +25,9 @@
            }
       %>
       
-       <table class="well span9 pull-left">
-      	<thead><tr><th><h3>Completed Activities</h3></th></tr></thead>
-      	<tbody>
-      		<tr>
-      			<td>Sunday Picnic</td>
-      		</tr>
-      		<tr>
-      			<td>Engineering tutor - help!</td>
-      		</tr>
-      		<tr>
-      			<td>GLBT Outing</td>
-      		</tr>
-      	</tbody>
-      </table>
+      <div class="span9 pull-left">
+		<%@ include file="/WEB-INF/partials/_cActivities.jsp"%>
+      </div>
       
       <%@ include file="/WEB-INF/partials/_sidebar.jsp"%>
       
