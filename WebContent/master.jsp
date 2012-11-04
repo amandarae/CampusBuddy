@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
@@ -65,7 +65,7 @@
 	           <li id="activities"><a href="home?activities=live">Current Activities</a></li>
 	           <li id="completed"><a href="home?activities=completed">Completed Activities</a></li>
 	           <li class="dropdown pull-right">
-                  <a id="title" class="dropdown-toggle" data-toggle="dropdown"><strong>Your Dashboard</strong> <b class="caret"></b></a>
+                  <a id="title" class="dropdown-toggle" data-toggle="dropdown"><strong> ${name} Dashboard</strong> <b class="caret"></b></a>
                   <ul class="dropdown-menu pull-right">
                   	<li id="create_activity"><a href="home?activities=create">Create an Activity</a></li>
                     <li id="user_activities"><a href="home?user=activities">Your Activities</a></li>

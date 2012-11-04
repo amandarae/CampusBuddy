@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <style>
 	.well{
 		background-color: #fff;
@@ -34,7 +34,7 @@
                 %>
                   <jsp:forward page="master.jsp">
                     <jsp:param name="embeddedPageName" value="activity.jsp"/>
-                    <jsp:param name="submitPageName" value="home.jsp" />
+                    <jsp:param name="submitPageName" value="/home" />
                   </jsp:forward>
                 <%
            }
@@ -42,20 +42,20 @@
 
 
 	<div class="well span9">
-      	<h3>Aide moi en francais!</h3>
-      	<h4>Need a buddy to help with my conversational french weekly! Lunch meetups welcome!</h4>
+      	<h3>${activity.title}</h3>
+      	<h4>${activity.description}</h4>
 
       	<table>
       		<tr>
       			<td><strong>Campus</strong></td>
-      			<td>Casa Loma</td>
+      			<td>${activity.campus}</td>
       		</tr>
       		<tr>
       			<td><strong>Primary Language</strong></td>
-      			<td>English</td>
+      			<td>${activity.language}</td>
       		</tr>
       		<tr>
-      			<td><strong>Buddy's Language</strong></td>
+      			<td><strong>${activity.buddylanguage}</strong></td>
       			<td>French</td>
       		</tr>
       </table>

@@ -24,7 +24,7 @@
                 %>
                   <jsp:forward page="master.jsp">
                     <jsp:param name="embeddedPageName" value="create_activity.jsp"/>
-                    <jsp:param name="submitPageName" value="user_activities.jsp" />
+                    <jsp:param name="submitPageName" value="ActivityServlet" />
                   </jsp:forward>
                 <%
            }
@@ -37,7 +37,7 @@
 	  <form class="form-horizontal">
 	   <label class="control-label" for="selectCampus">Select Your Campus</label>
     	<div class="controls">
-	    	<select id="selectCampus">
+	    	<select id="selectCampus" name="activity">
 			  <option>St. James</option>
 			  <option>Casa Loma</option>
 			  <option>Waterfront</option>
@@ -46,16 +46,16 @@
 		</div>
 	  <label class="control-label" for="inputTitle">Activity Title</label>
     	<div class="controls">
-      		<input type="text" id="inputTitle" placeholder="Tagline to get buddies' attention" class="input-xxlarge">
+      		<input type="text" id="inputTitle" name="activity" placeholder="Tagline to get buddies' attention" class="input-xxlarge">
     	</div>
       <label class="control-label" for="inputDesc">Description</label>
     	<div class="controls">
-      		<textarea id="inputDesc" placeholder="What do you want to do?" class="input-xxlarge" rows="7"></textarea>
+      		<textarea id="inputDesc" name="activity" placeholder="What do you want to do?" class="input-xxlarge" rows="7"></textarea>
     	</div>
     	
     	<label class="control-label" for="selectLang">Your Primary Language</label>
     	<div class="controls">
-	    	<select id="selectLang">
+	    	<select name="activity" id="selectLang">
 			  <option>English</option>
 			  <option>Mandarin</option>
 			  <option>Japanese</option>
@@ -69,7 +69,7 @@
 		
 		<label class="control-label" for="selectBLang">Buddy's Primary Language</label>
     	<div class="controls">
-	    	<select id="selectBLang">
+	    	<select  name="activity" id="selectBLang">
 			  <option>English</option>
 			  <option>Mandarin</option>
 			  <option>Japanese</option>
@@ -77,7 +77,7 @@
 			  <option>French</option>
 			  <option>Spanish</option>
 			  <option>American Sign Language (ASL)</option>
-			  <option>Other</option>
+			  <option>Any</option>
 			</select>
 		</div>
 		

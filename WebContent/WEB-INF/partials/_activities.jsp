@@ -3,7 +3,7 @@
 	  	<tbody>
 		  	<c:forEach var="activity" items="${activities}">
 		 	    <tr>
-		 			<td><a href="<c:url value="activity.jsp?id=${activity.id}"/>">${activity.title}</a></td>
+		 			<td><a href="<c:url value="activity?id=${activity.id}"/>">${activity.title}</a></td>
 		    	</tr>
 			</c:forEach>
 	    </tbody>
